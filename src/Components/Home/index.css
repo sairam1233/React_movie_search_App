@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.bgContainer{
+    min-height: 100vh;
+    max-height: 100%;
+    margin: 0px;
+    background-color: black;
+    padding: 30px;
+    font-family: "roboto";
+    transition: 0.5s;
+    scroll-behavior: smooth;
+
+}
+.bgContainer1{
+    min-height: 100vh;
+    max-height: 100%;
+    margin: 0px;
+    background-color:#F3F3F3;
+    padding: 30px;
+    font-family: "roboto";
+    transition: 0.5s;
+    scroll-behavior: smooth;
+
+}
+.ic{
+    font-size: 90px;
+    color: #EBAC00;
+}
+.h2{
+    padding-top: 10px;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.dt{
+    color: #EBAC00;
+}
+.dv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    gap: 25px;
+}
+.inputContainer{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #131313;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #313131;
+    gap: 16px;
+    transition: 0.5s;
+}
+.inputContainer1{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.movieContainer{
+    min-height: 80vh;
+    max-height: 1000%;
+    padding: 20px;
+    background-color: #131313;
+    border-radius: 12px;
+    border: 1px solid #313131;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+
+}
+.movieContainer1{
+    min-height: 80vh;
+    max-height: 1000%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    scroll-behavior: smooth;
+
+}
+.inp{
+    padding: 13px;
+    background-color: transparent;
+    border: 1px solid #313131;
+    border-radius: 10px;
+    outline: none;
+    color: #6F6F6F;
+    width: 100%;
+    transition: 0.5s;
+
+}
+.inp1{
+    padding: 13px;
+    background-color: transparent;
+    border: 1px solid #CFCECE;
+    border-radius: 10px;
+    outline: none;
+    color: #6F6F6F;
+    width: 100%;
+    transition: 0.5s;
+
+}
+.searchBtn{
+    background-color: #EBAC00;
+    color: white;
+    border-radius: 10px;
+    padding: 11px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100px;
+}
+.ld{
+    color: #EBAC00;
+    background-color: #EBAC00;
+}
+
+@media(max-width:800px){
+    .inputContainer{
+        width: 100%;
+    }
+    .inputContainer1{
+        width: 100%;
+    }
+    .movieContainer{
+        min-height: 84vh;
+        max-height: 100%;
+        row-gap: 90px;
+        padding-bottom: 40px;
+    }
+    .movieContainer1{
+        min-height: 84vh;
+        max-height: 100%;
+        row-gap: 90px;
+        padding-bottom: 40px;
+    }
+    .bgContainer1{
+        padding: 16px;
+        padding-bottom: 30px;
+    }
+    .bgContainer{
+        padding: 16px;
+        padding-bottom: 30px;
+    }
+    .ic1{
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #131313;
+    border: 1px solid #313131;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #EBAC00;
+   transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.5s;
+  }
+  
+  input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: white;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #EBAC00, inset -10px -4px 0 0 #EBAC00;
+  }
